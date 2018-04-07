@@ -43,7 +43,7 @@ $this->load->view('Partials/stylesheets');
 
 
     <?php
-        $this->load->view('Partials/footer');
+        $this->load->view('Partials/Footer');
     ?>
 
 

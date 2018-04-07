@@ -5,14 +5,12 @@
                 <div class="col-xs-12 col-md-7 header-text">
                     <h2>Find Your Faviourate Debate</h2>
                     <p>
-                    Particiapate in it .dasda
+                    Particiapate in it
                     </p>
                     <a href="#debate" class="button white">Start Debating</a>
-                    <a href="#result" class="button">Result</a>
-                
                 </div>
                 <div class="hidden-xs hidden-sm col-md-7 text-right">
-                    
+
                 </div>
             </div>
         </div>

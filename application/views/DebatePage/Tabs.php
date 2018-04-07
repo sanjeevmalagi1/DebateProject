@@ -13,53 +13,70 @@
             <li data-target="#caption_slide" data-slide-to="2" style="color : #F44336;">
                 <strong>Against</strong>The Topic.
             </li>
-            
-        </ol>    
+
+        </ol>
         <div class="carousel-inner" role="listbox">
                 <div class="item row">
                     <div class="v-center">
                         <div class="col-md-6 row">
                             <?php
-                                $this->load->view('Partials/DebatePage/ProComment');	
+                              foreach ($comments as $comment) {
+                                if($comment['Type'] == 'PRO'){
+                                    $this->load->view('Partials/DebatePage/ProComment',$comment);
+                                }
+                              }
                             ?>
                         </div>
                         <div class="col-md-6 row">
                             <?php
-                                $this->load->view('Partials/DebatePage/AgainstComment');	
+                              foreach ($comments as $comment) {
+                                if($comment['Type'] == 'AGAINST'){
+                                    $this->load->view('Partials/DebatePage/AgainstComment',$comment);
+                                }
+                              }
                             ?>
                         </div>
                     </div>
-                </div>        
+                </div>
 
                 <div class="item row">
                     <div class="v-center">
                         <div class="col-xs-12 col-md-10 row">
                             <?php
-                            $this->load->view('Partials/DebatePage/ProForm');	
+                            $data['debateId'] = $ID;
+                            $this->load->view('Partials/DebatePage/ProForm',$data);
                             ?>
                             <?php
-                            $this->load->view('Partials/DebatePage/ProComment');	
+                              foreach ($comments as $comment) {
+                                if($comment['Type'] == 'PRO'){
+                                    $this->load->view('Partials/DebatePage/ProComment',$comment);
+                                }
+                              }
                             ?>
                         </div>
-                        
+
                     </div>
                 </div>
-                
+
                 <div class="item row">
                     <div class="v-center">
                         <div class="col-xs-12 col-md-10 row">
                             <?php
-                            $this->load->view('Partials/DebatePage/AgainstForm');	
+                            $this->load->view('Partials/DebatePage/AgainstForm');
                             ?>
                             <?php
-                                $this->load->view('Partials/DebatePage/AgainstComment');	
+                              foreach ($comments as $comment) {
+                                if($comment['Type'] == 'AGAINST'){
+                                    $this->load->view('Partials/DebatePage/AgainstComment',$comment);
+                                }
+                              }
                             ?>
                         </div>
                     </div>
                 </div>
-                
+
             <!-- Indicators -->
-            
+
         </div>
     </div>
 </div>
@@ -68,7 +85,7 @@
 
 <style>
 
-    
+
 .card{
     background: #fff;
     border-radius: 2px;
@@ -85,4 +102,4 @@
 .pro{
     background: #E8F5E9 !important;
 }
-</style>    
+</style>

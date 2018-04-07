@@ -1,11 +1,29 @@
+<?php
+  if($this->session->UserName){
+?>
 <div class="single-blog card row pro">
     <div class="col-sm-3 text-center">
-        <img class="img-circle" src="https://randomuser.me/api/portraits/men/86.jpg"/>
-        <div>User Name</div>
+        <img class="img-circle" src="https://ui-avatars.com/api/?name=<?php echo $this->session->UserName; ?>"/>
+        <div><?php echo $this->session->UserName; ?></div>
+        <small class="text-muted"><?php echo $this->session->UserType; ?></small>
     </div>
-    <form method="post" action="google.com/" class="contact-form col-sm-9">
-        <input class="form-control" placeholder="Heading" />    
+    <form method="post" action="<?php echo base_url(); ?>index.php/Debates/ProComment/<?php echo $debateId ?>" class="contact-form col-sm-9">
+        <input name="heading" class="form-control" placeholder="Heading" />
         <textarea name="message" id="form-message" name="form-message" rows="5" cols="150" class="form-control" placeholder="Your message" required="required"></textarea>
-        <button type="sibmit" class="btn btn-success btn-lg col-sm-5">Submit</button>
+        <button type="submit" class="btn btn-success btn-lg col-sm-5">Submit</button>
     </form>
 </div>
+<?php
+  }
+  else {
+?>
+<div class="single-blog card row pro">
+    <div class="text-center">
+        <div>Please Log in to participate in debate <a class="btn btn-link" href="<?php echo base_url() ?>index.php/Auth/login">Login Now !!</a></div>
+    </div>
+
+</div>
+
+<?php
+  }
+?>

@@ -2,23 +2,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-                    <div class="price-table active">
+                    <form action="<?php echo base_url(); ?>index.php/Auth/signUp" method="post" class="price-table active">
                         <h3 class="text-uppercase price-title">Sign Up</h3>
                         <p>Already Have an account ? <a href="<?php echo base_url() ?>index.php/Auth/login" class="btn btn-info">Log in</a> </p>
-                        <hr>    
-                            <input class="form-control" placeholder="Username">
-                            <input type="password" class="form-control" placeholder="Password">
+                        <hr>
+                            <input name="username" class="form-control" placeholder="Username">
+                            <input name="password" type="password" class="form-control" placeholder="Password">
                             <input type="password" class="form-control" placeholder="Confirm Password">
-                            <select class="form-control">
-                                <option>Student</option>
-                                <option>Teacher</option>
-                                <option>Other</option>
+                            <select name="usertype" class="form-control">
+                                <option value="Student">Student</option>
+                                <option value="Teacher">Teacher</option>
+                                <option value="Other">Other</option>
                             </select>
                         <hr>
-                        <button class="button">Sign Up</button>
-                    </div>
+                        <button type="submit" class="button">Sign Up</button>
+                        <button type="reset" class="button white">Reset</button>
+                    </form>
                 </div>
-                
+
             </div>
         </div>
     </section>

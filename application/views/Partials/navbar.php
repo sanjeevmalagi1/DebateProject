@@ -23,11 +23,29 @@
             <nav class="collapse navbar-collapse" id="primary-menu">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="<?php echo base_url(); ?>">Home</a></li>
-                    <li><a href="<?php echo base_url(); ?>index.php/home/debates">Debate</a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/Debates">Debates</a></li>
                     <li><a href="<?php echo base_url(); ?>index.php/home/helpbox">Help Box</a></li>
                     <li><a href="<?php echo base_url(); ?>index.php/home/IdeasHub">Ideas Hub</a></li>
-                    <li><a href="<?php echo base_url(); ?>index.php/Auth/login">Login / Signup</a></li>
-                
+                    <?php
+                      if($this->session->UserName){
+                    ?>
+                      <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->session->UserName; ?>
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu" style="margin-top:-30px; z-index: 2;">
+                          <li><a href="<?php echo base_url() ?>index.php/Auth/logout">Logout</a></li>
+                        </ul>
+                      </li>
+                      <!-- <li><a href="<?php echo base_url(); ?>index.php/Auth/login"></a></li> -->
+                    <?php
+                      }
+                      else{
+                    ?>
+                      <li><a href="<?php echo base_url(); ?>index.php/Auth/login">Login / Signup</a></li>
+                    <?php
+                    }
+                    ?>
+
                 </ul>
             </nav>
         </div>
