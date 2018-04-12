@@ -22,21 +22,44 @@ $this->load->view('Partials/stylesheets');
     ?>
 
 
-    <!--Feature-area-->
-    <section class="gray-bg section-padding" id="service-page">
+<section class="gray-bg section-padding" id="feature-page">
         <div class="container">
             <div class="row">
-                <div class="text-center">
-                    <h1>Ideas Hub</h1>
-                </div>
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                    <div class="box">
-                        
-                        <h4>Idea #1</h4>
-                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>Welcome to Project Name</h2>
+                        <p>A short description of project</p>
                     </div>
                 </div>
-                
+            </div>
+            <div class="row">
+                <a href="<?php echo base_url(); ?>index.php/Debates" class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="<?php echo base_url(); ?>images/portfolio-icon-1.png" alt="">
+                        </div>
+                        <h3>Debate</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </a>
+                <a href="<?php echo base_url(); ?>index.php/IdeasHub" class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="<?php echo base_url(); ?>images/portfolio-icon-2.png" alt="">
+                        </div>
+                        <h3>Ideas Hub</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </a>
+                <a href="<?php echo base_url(); ?>index.php/HelpBox" class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="box">
+                        <div class="box-icon">
+                            <img src="<?php echo base_url(); ?>images/portfolio-icon-3.png" alt="">
+                        </div>
+                        <h3>Help Box</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>

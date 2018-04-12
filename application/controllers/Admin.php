@@ -7,13 +7,19 @@ class Admin extends CI_Controller {
         parent::__construct();
 				$this->load->library('session');
 	      $this->load->model('debate');
-        $this->load->model('comment');
+				$this->load->model('comment');
+				$this->load->model('ideas');
+				$this->load->model('submissions');
 				$this->load->helper('url');
   }
 
 	public function index()
 	{
+    $this->load->view('Admin/Dashboard/index');
+	}
 
+	public function login()
+	{
     $this->load->view('Admin/Dashboard/index');
 	}
 
@@ -57,12 +63,14 @@ class Admin extends CI_Controller {
 
   public function IdeasList()
 	{
-    $this->load->view('Admin/Dashboard/index');
+		$data['ideas'] = $this->ideas->getAllIdeas();
+    $this->load->view('Admin/IdeasHub/index',$data);
 	}
 
   public function HelpBoxList()
 	{
-    $this->load->view('Admin/Dashboard/index');
+		$data['submissions'] = $this->submissions->getAllSubmissions();
+    $this->load->view('Admin/HelpBoxList/index',$data);
 	}
 
 

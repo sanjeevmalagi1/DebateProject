@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="<?php echo base_url() ?>index.php/Admin/">
           <i class="fa fa-fw fa-dashboard"></i>
           <span class="nav-link-text">Dashboard</span>
         </a>
@@ -26,38 +26,18 @@
         </ul>
       </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="<?php echo base_url() ?>index.php/Admin/HelpBoxList/">
           <i class="fa fa-fw fa-area-chart"></i>
-          <span class="nav-link-text">Charts</span>
+          <span class="nav-link-text">Help Box Submission</span>
         </a>
       </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo base_url() ?>index.php/Admin/IdeasList/">
           <i class="fa fa-fw fa-table"></i>
-          <span class="nav-link-text">Tables</span>
+          <span class="nav-link-text">Ideas Submissions</span>
         </a>
       </li>
-      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
-        <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
-          <i class="fa fa-fw fa-wrench"></i>
-          <span class="nav-link-text">Components</span>
-        </a>
-        <ul class="sidenav-second-level collapse" id="collapseComponents">
-          <li>
-            <a href="navbar.html">Navbar</a>
-          </li>
-          <li>
-            <a href="cards.html">Cards</a>
-          </li>
-        </ul>
-      </li>
-
-      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-        <a class="nav-link" href="#">
-          <i class="fa fa-fw fa-link"></i>
-          <span class="nav-link-text">Link</span>
-        </a>
-      </li>
+      
     </ul>
     <ul class="navbar-nav sidenav-toggler">
       <li class="nav-item">

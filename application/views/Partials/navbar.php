@@ -6,7 +6,7 @@
             <div class="sk-cube3 sk-cube"></div>
         </div>
     </div>
-<div class="mainmenu-area" data-spy="affix" data-offset-top="00">
+<div class="mainmenu-area" data-spy="affix" data-offset-top="00" style="background-color: #138fc2;">
         <div class="container">
             <!--Logo-->
             <div class="navbar-header">
@@ -24,8 +24,8 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="<?php echo base_url(); ?>">Home</a></li>
                     <li><a href="<?php echo base_url(); ?>index.php/Debates">Debates</a></li>
-                    <li><a href="<?php echo base_url(); ?>index.php/home/helpbox">Help Box</a></li>
-                    <li><a href="<?php echo base_url(); ?>index.php/home/IdeasHub">Ideas Hub</a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/IdeasHub">Ideas Hub</a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/helpbox">Help Box</a></li>
                     <?php
                       if($this->session->UserName){
                     ?>

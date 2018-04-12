@@ -32,7 +32,7 @@ class Auth extends CI_Controller {
 			$result = $this->user->login($username,$hashedPassword);
 
 			if($result){
-        $this->session->set_userdata($result);
+        		$this->session->set_userdata($result);
 				redirect('/', 'refresh');
 			}
 

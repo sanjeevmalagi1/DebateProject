@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>style.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/responsive.css">
     <script src="<?php echo base_url(); ?>js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/vendor/jquery-1.12.4.min.js"></script>
+    
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuI2PWPCrQ5J8w7ArjUD-TsESty2Ke7A0">
+    </script>
 
     <!--[if lt IE 9]>
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

@@ -1,4 +1,4 @@
-<footer style="background:black;">
+<footer style="background:black;" style="position: absolute; bottom : 0px;">
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
