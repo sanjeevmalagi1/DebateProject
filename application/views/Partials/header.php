@@ -9,7 +9,7 @@
                         <div class="carousel-inner">
                             <div class="item active">
                             <img 
-                                src="https://image.freepik.com/free-psd/abstract-background-design_1297-87.jpg"
+                                src="<?php echo base_url(); ?>/images/Slides/SLIDE_1.jpg"
                                 class="img-responsive center-block"
                             />
                             
@@ -17,17 +17,24 @@
 
                             <div class="item">
                             <img 
-                                src="https://image.freepik.com/free-psd/abstract-background-design_1297-87.jpg"
+                                src="<?php echo base_url(); ?>/images/Slides/SLIDE_2.jpg"
                                 class="img-responsive center-block"
                             />    
                             </div>
 
                             <div class="item">
                             <img 
-                                src="https://image.freepik.com/free-psd/abstract-background-design_1297-87.jpg"
+                                src="<?php echo base_url(); ?>/images/Slides/SLIDE_3.jpg"
                                 class="img-responsive center-block"
                             />    
-                        </div>
+                            </div>
+
+                            <div class="item">
+                            <img 
+                                src="<?php echo base_url(); ?>/images/Slides/SLIDE_4.png"
+                                class="img-responsive center-block"
+                            />    
+                            </div>
                         </div>
 
                         <!-- Left and right controls -->

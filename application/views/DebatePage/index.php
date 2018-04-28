@@ -18,6 +18,11 @@ $this->load->view('Partials/stylesheets');
     ?>
 
     <?php
+        $data['ID'] = $debate['ID'];
+        $this->load->view('DebatePage/rate',$data);
+    ?>    
+
+    <?php
         $data['comments'] = $comments;
         $data['ID'] = $debate['ID'];
         $this->load->view('DebatePage/Tabs',$data);

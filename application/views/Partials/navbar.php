@@ -25,7 +25,7 @@
                     <li><a href="<?php echo base_url(); ?>">Home</a></li>
                     <li><a href="<?php echo base_url(); ?>index.php/Debates">Debates</a></li>
                     <li><a href="<?php echo base_url(); ?>index.php/IdeasHub">Ideas Hub</a></li>
-                    <li><a href="<?php echo base_url(); ?>index.php/helpbox">Help Box</a></li>
+                    <li><a href="<?php echo base_url(); ?>index.php/Helpbox">Survey</a></li>
                     <?php
                       if($this->session->UserName){
                     ?>

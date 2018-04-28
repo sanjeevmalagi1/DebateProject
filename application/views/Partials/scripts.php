@@ -8,5 +8,6 @@
     <script src="<?php echo base_url(); ?>js/scrollUp.min.js"></script>
     <script src="<?php echo base_url(); ?>js/magnific-popup.min.js"></script>
     <script src="<?php echo base_url(); ?>js/wow.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/rating.js"></script>
     <!--Main-active-JS-->
     <script src="<?php echo base_url(); ?>js/main.js"></script>

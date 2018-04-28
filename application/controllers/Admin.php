@@ -15,22 +15,35 @@ class Admin extends CI_Controller {
 
 	public function index()
 	{
+		if($this->session->UserType != "Admin"){
+					redirect('/', 'refresh');
+		}
     $this->load->view('Admin/Dashboard/index');
 	}
 
 	public function login()
 	{
+		if($this->session->UserType != "Admin"){
+			redirect('/', 'refresh');
+		}
     $this->load->view('Admin/Dashboard/index');
 	}
 
   public function ManageDebates()
 	{
+		if($this->session->UserType != "Admin"){
+			redirect('/', 'refresh');
+		}
 		$result['debates'] = $this->debate->getAllDebates();
     $this->load->view('Admin/ManageDebates/index',$result);
 	}
 
 	public function AddDebate()
 	{
+		if($this->session->UserType != "Admin"){
+			redirect('/', 'refresh');
+		}
+		
 		if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 				$this->load->view('Admin/AddDebate/index');
 		}
@@ -46,6 +59,10 @@ class Admin extends CI_Controller {
 
 	public function EditDebate($debateId)
 	{
+		if($this->session->UserType != "Admin"){
+			redirect('/', 'refresh');
+		}
+		
 		if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 				$data['debate'] = $this->debate->getDebate($debateId);
 				$this->load->view('Admin/EditDebate/index',$data);
@@ -63,12 +80,20 @@ class Admin extends CI_Controller {
 
   public function IdeasList()
 	{
+		if($this->session->UserType != "Admin"){
+			redirect('/', 'refresh');
+		}
+		
 		$data['ideas'] = $this->ideas->getAllIdeas();
     $this->load->view('Admin/IdeasHub/index',$data);
 	}
 
   public function HelpBoxList()
 	{
+		if($this->session->UserType != "Admin"){
+			redirect('/', 'refresh');
+		}
+		
 		$data['submissions'] = $this->submissions->getAllSubmissions();
     $this->load->view('Admin/HelpBoxList/index',$data);
 	}

@@ -12,7 +12,7 @@
                 
                 </div>
                 <div class="hidden-xs hidden-sm col-md-7 text-right">
-                    
+                                  
                 </div>
             </div>
         </div>

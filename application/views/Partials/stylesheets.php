@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/themify-icons.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/magnific-popup.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/animate.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/rating.css">
     <!-- Main-Stylesheets -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>css/normalize.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>style.css">

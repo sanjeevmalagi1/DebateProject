@@ -56,7 +56,7 @@ $this->load->view('Partials/stylesheets');
                         <div class="box-icon">
                             <img src="<?php echo base_url(); ?>images/portfolio-icon-3.png" alt="">
                         </div>
-                        <h3>Help Box</h3>
+                        <h3>Survey</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
                     </div>
                 </a>
